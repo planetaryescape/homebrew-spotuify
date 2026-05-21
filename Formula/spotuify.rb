@@ -1,23 +1,23 @@
 class Spotuify < Formula
   desc "Keyboard-native Spotify TUI, CLI, and daemon"
   homepage "https://github.com/planetaryescape/spotuify"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/planetaryescape/spotuify/releases/download/v#{version}/spotuify-v#{version}-macos-aarch64.tar.gz"
-      sha256 "bb0b11babf81a17fdf687b8c189b5cbe0703449523c9aa72d027268068bc4478"
+      sha256 "a8faf623e631035adea0789134eb338b8a2ca77f348b3396f9b32acd9988ef50"
     else
       url "https://github.com/planetaryescape/spotuify/releases/download/v#{version}/spotuify-v#{version}-macos-x86_64.tar.gz"
-      sha256 "eb127ac271438113552d29d60e83008a039b250a4cc07425dcaba94750df5d97"
+      sha256 "5f070a23ceca3cc4a16b222d23a56723ec2fa83c1153cd67b144c4fa7e62fb04"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/planetaryescape/spotuify/releases/download/v#{version}/spotuify-v#{version}-linux-x86_64.tar.gz"
-      sha256 "4aee66d99e59a2219eb1c2509d3dc3e40df56d49d980f3bb49e5417ddf92e634"
+      sha256 "e899c4fa1c84c18c62a64c2605b3dc67a68c40da06481d104c7f6250935f9a95"
     end
   end
 
